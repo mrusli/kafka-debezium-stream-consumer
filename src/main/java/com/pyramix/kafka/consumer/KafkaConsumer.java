@@ -12,6 +12,7 @@ public class KafkaConsumer {
 
 	@KafkaListener(topics = {"user_company_topic_02"})
 	public void listen_04(ConsumerRecord<String, String> event) {
+		// test
 		log.info(event.toString());
 	}
 	
